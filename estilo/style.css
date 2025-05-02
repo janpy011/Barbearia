@@ -299,12 +299,6 @@ footer {
 footer a {
     color: #ffffff;
     animation: rainbowShadow 3s ease-in infinite;
-    display: inline-block;
-}
-
-footer a:hover {
-    transform: translateY(-6px);
-    transition: .4s;
 }
 
 /*-----FOOTER FIM-----*/
