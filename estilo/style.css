@@ -2,7 +2,6 @@ html {
     scroll-behavior: smooth;
 }
 
-
 * {
     margin: 0;
     padding: 0;
@@ -284,7 +283,6 @@ main .info p {
     text-align: center;
     font-weight: 700;
 }
-
 /*-----CONTATO FIM-----*/
 
 /*-----FOOTER-----*/
@@ -294,6 +292,8 @@ footer {
     background-color: #0d0d0d;
     font-size: 14px;
     text-align: center;
+    width: 100%;
+    height: fit-content;
 }
 /*-----FOOTER FIM-----*/
 
