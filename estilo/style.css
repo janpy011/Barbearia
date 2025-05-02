@@ -98,15 +98,17 @@ header .titulo {
     gap: .3em;
 }
 
-.titulo h1{
-    text-shadow: 2px 2px 2px #000;
+.titulo h1 {
+    font-size: 40px;
 }
 
-.titulo small{
+.titulo small {
     background-color: #000;
     padding: 8px;
     border-radius: 50px;
     font-weight: 700;
+    width: fit-content;
+    margin: 0 auto;
 }
 
 header .horarios {
@@ -145,10 +147,11 @@ header .hora {
 .whats img:hover {
     filter: drop-shadow(0px 0px 8px #00ff15);
 }
+
 /*-----FIM HEADER-----*/
 
 /*-----MAIN-----*/
-main{
+main {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -161,27 +164,28 @@ main{
     gap: 5em;
 }
 
-.main_titulo h1{
+.main_titulo h1 {
     font-size: 60px;
 }
 
-.main_titulo h2{
+.main_titulo h2 {
     font-size: 50px;
 }
 
-main .info{
+main .info {
     display: flex;
     flex-direction: column;
     gap: 2em;
 }
 
-main .info p{
+main .info p {
     font-weight: 700;
 }
+
 /*-----FIM MAIN*/
 
 /*-----SECTIONS-----*/
-#servicos{
+#servicos {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -192,13 +196,13 @@ main .info p{
     background-color: #0f0f0f;
 }
 
-.titulo_section{
+.titulo_section {
     color: #fff;
     font-weight: 700;
     font-size: 40px;
 }
 
-#servicos article{
+#servicos article {
     display: flex;
     gap: 3em;
     align-items: center;
@@ -207,21 +211,27 @@ main .info p{
     color: #fff;
 }
 
-.reverse{
+.reverse {
     flex-direction: row-reverse;
 }
 
-.servicos_img{
-    width: 140px;
+.servicos_img {
+    width: 170px;
 }
 
-.servicos_texto{
+.servicos_img img {
+    border-radius: 6px;
+    box-shadow: 0px 0px 8px #fff;
+}
+
+.servicos_texto {
     width: 200px;
 }
+
 /*-----SECTION FIM-----*/
 
 /*-----CONTATO-----*/
-.contato{
+.contato {
     background-image: url(../img/fundo_animado.gif);
     background-repeat: no-repeat;
     background-size: cover;
@@ -233,7 +243,7 @@ main .info p{
     width: 100%;
 }
 
-.marca_hora{
+.marca_hora {
     height: fit-content;
     width: fit-content;
     padding: 2em;
@@ -245,45 +255,58 @@ main .info p{
     gap: 3em;
 }
 
-.marca_hora h3{
+.marca_hora h3 {
     text-align: center;
     font-size: 40px;
 }
 
-.marca_hora .social{
+.marca_hora .social {
     display: flex;
     margin: 0 auto;
     gap: 2.5em;
 }
 
-.social img{
+.social img {
     width: 50px;
 }
 
-.social img:hover{
+.social img:hover {
     transform: translateY(-6px);
     filter: drop-shadow(0px 0px 8px #fff);
     transition: .4s;
 }
 
 .insta,
-.wpp{
+.wpp {
     display: flex;
     flex-direction: column;
     gap: 1em;
     text-align: center;
     font-weight: 700;
 }
+
 /*-----CONTATO FIM-----*/
 
 /*-----FOOTER-----*/
 footer {
-    text-align: center;
     padding: 30px;
     color: #999;
     background-color: #0d0d0d;
     font-size: 14px;
+    text-align: center;
 }
+
+footer a {
+    color: #ffffff;
+    animation: rainbowShadow 3s ease-in infinite;
+    display: inline-block;
+}
+
+footer a:hover {
+    transform: translateY(-6px);
+    transition: .4s;
+}
+
 /*-----FOOTER FIM-----*/
 
 /* Animação Scroll */
@@ -314,6 +337,36 @@ footer {
     transform: translate(0);
 }
 
+@keyframes rainbowShadow {
+    0% {
+        text-shadow: 0 0 10px red;
+    }
+
+    16% {
+        text-shadow: 0 0 10px orange;
+    }
+
+    32% {
+        text-shadow: 0 0 10px yellow;
+    }
+
+    48% {
+        text-shadow: 0 0 10px green;
+    }
+
+    64% {
+        text-shadow: 0 0 10px blue;
+    }
+
+    80% {
+        text-shadow: 0 0 10px indigo;
+    }
+
+    100% {
+        text-shadow: 0 0 10px violet;
+    }
+}
+
 /* Responsividade */
 @media screen and (max-width: 768px) {
     nav .ul_nav {
@@ -342,19 +395,19 @@ footer {
         margin-right: 100px;
     }
 
-    main{
+    main {
         gap: 3em;
     }
 
-    main .info{
+    main .info {
         gap: 1.3em;
     }
 
-    #servicos{
+    #servicos {
         padding: 10px;
     }
 
-    #servicos article{
+    #servicos article {
         gap: 2em;
     }
 }
