@@ -212,7 +212,11 @@ main .info p{
 }
 
 .servicos_img{
-    width: 110px;
+    width: 140px;
+}
+
+.servicos_texto{
+    width: 200px;
 }
 /*-----SECTION FIM-----*/
 
@@ -344,5 +348,13 @@ footer {
 
     main .info{
         gap: 1.3em;
+    }
+
+    #servicos{
+        padding: 10px;
+    }
+
+    #servicos article{
+        gap: 2em;
     }
 }
