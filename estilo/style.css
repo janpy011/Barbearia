@@ -53,8 +53,6 @@ nav a:hover {
     flex-direction: column;
     gap: 5px;
     cursor: pointer;
-    position: relative;
-    left: 165px;
 }
 
 .menu-hamburguer span {
@@ -219,10 +217,12 @@ main .info p{
 
     .menu-hamburguer {
         display: flex;
+        margin-left: 130px;
     }
 
     .logo {
         width: 50px;
+        margin-right: 100px;
     }
 
     main{
