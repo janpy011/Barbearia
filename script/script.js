@@ -30,3 +30,21 @@ const animarOnScroll = () => {
 
 window.addEventListener('scroll', animarOnScroll);
 window.addEventListener('load', animarOnScroll);
+
+const whatsBtn = document.querySelector(".whats");
+const contato = document.querySelector(".contato");
+
+function toggleWhatsVisibility() {
+    const contatoTop = contato.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
+    if (contatoTop <= windowHeight * 0.5) {
+        whatsBtn.classList.add("ocultar");
+    } else {
+        whatsBtn.classList.remove("ocultar");
+    }
+}
+
+window.addEventListener("scroll", toggleWhatsVisibility);
+window.addEventListener("load", toggleWhatsVisibility);
+

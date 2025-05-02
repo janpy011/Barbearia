@@ -1,3 +1,8 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -127,6 +132,11 @@ header .hora {
     z-index: 1000;
 }
 
+.whats.ocultar {
+    display: none;
+}
+
+
 .whats img {
     width: 100px;
     transition: 0.4s;
@@ -168,6 +178,109 @@ main .info{
 main .info p{
     font-weight: 700;
 }
+/*-----FIM MAIN*/
+
+/*-----SECTIONS-----*/
+#servicos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4em;
+    height: 100dvh;
+    width: 100%;
+    background-color: #0f0f0f;
+}
+
+.titulo_section{
+    color: #fff;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+#servicos article{
+    display: flex;
+    gap: 3em;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.reverse{
+    flex-direction: row-reverse;
+}
+
+.servicos_img{
+    width: 110px;
+}
+/*-----SECTION FIM-----*/
+
+/*-----CONTATO-----*/
+.contato{
+    background-image: url(../img/fundo_animado.mp4);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+    width: 100%;
+}
+
+.marca_hora{
+    height: fit-content;
+    width: fit-content;
+    padding: 2em;
+    background-color: rgba(0, 0, 0, .8);
+    color: #fff;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+
+.marca_hora h3{
+    text-align: center;
+    font-size: 40px;
+}
+
+.marca_hora .social{
+    display: flex;
+    margin: 0 auto;
+    gap: 2.5em;
+}
+
+.social img{
+    width: 50px;
+}
+
+.social img:hover{
+    transform: translateY(-6px);
+    filter: drop-shadow(0px 0px 8px #fff);
+    transition: .4s;
+}
+
+.insta,
+.wpp{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    text-align: center;
+    font-weight: 700;
+}
+/*-----CONTATO FIM-----*/
+
+/*-----FOOTER-----*/
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #999;
+    background-color: #0d0d0d;
+    font-size: 14px;
+}
+/*-----FOOTER FIM-----*/
 
 /* Animação Scroll */
 [data-animar] {
